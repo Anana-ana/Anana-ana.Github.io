@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBeauty Nails</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores suaves e impactantes */
+:root {
+    --cor-principal: rgb(255, 255, 255); /* Branco */
+    --cor-secundaria:rgb(233, 30, 99); /* Rosa Vibrante */
+    --cor-texto: #333333; /* Texto escuro */
+    --cor-fundo: #F8F8F8; /* Fundo suave */
+    --cor-footer: #333333;
+}
+
+/* Estilizando o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-bar .contact-info {
+    padding-left: 20px;
+}
+
+.top-bar .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(233, 30, 99);
+    font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(233, 30, 99);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.navbar .logo {
+    width: 150px;
+    padding: 5px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--cor-texto);
+}
+
+/* Hero Section */
+.hero {
+    padding: 0px 0;
+    text-align: center;
+}
+
+.hero-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Content */
+.product-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.2s;
+    
+}
+.product-cards:hover{
+    transform: scale(1.05);
+
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    border: 1px solid #E91E63;
+    
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card p:nth-child(2) {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-contact {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .footer-social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer .footer-slogan {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.services-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    border: 1px solid #E91E63;
+}
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    color: var(--cor-principal);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--cor-texto);
+    font-size: 16px;
+}
+.text-box {
+    background-color: #FFF4F4;
+    padding: 25px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #E91E63;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.2s;
+}
+.text-box:hover{
+    transform: scale(1.05);
+
+}
+
+.text-box .text-content p {
+    font-size: 18px;
+    color: var(--cor-texto);
+    font-weight: bold;
+}
+
+
+</style>
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <span class="contact-info" style="color: #333333; padding-bottom: 5px;"> ☎ (11) 95910-3096</span>
+        <b style="color: #333333;">KBeauty Nails</b>
+        <div class="social-links">
+            <a href="#" class="social-icon"><img src="insta.png" width="30px"></a>
+            <a href="#" class="social-icon"><img src="tiktok-logo.png" width="30px"></a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"> <img src="ChatGPT Image 27 de abr. de 2025, 10_02_07.png" width="100px"></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="file:///E:/sobre.html">Sobre</a></li>
+            <li><a href="file:///E:/lojas.html">Lojas</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-banner">
+        <img src="PW/Trabalho de P.W.jpg" >
+        </div>
+    </section>
+    <section class="text-box">
+        <div class="text-content">
+            <p>Sempre desejou ter as famosas unhas coreanas mas nunca achou uma loja de confiança? Que bom que achamos você! Aqui na KBeauty Nails decoramos as suas unhas nas técnicas coreanas do seu jeito! Entre em contato já!😉</p>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Main Content -->
+    <section class="product-section">
+        <h2>Esmaltes mais pedidos💕</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="PW/esmalte vermelho.webp">
+                <p>Esmalte Vermelho Risqué linha Gel</p>
+                <p>R$ 10,90</p>
+            </div>
+            <div class="product-card">
+                <img src="PW/esmalte azul.png">
+                <p>Esmalte Azul Risqué Glitter</p>
+                <p>R$ 6,90</p>
+            </div>
+            <div class="product-card">
+                <img src="PW/esmalte nude.webp">
+                <p>Esmalte Nude Ana Hickmann</p>
+                <p>R$ 8,90</p>
+            </div>
+            <div class="product-card">
+                <img src="PW/esmalte rosa.jpg">
+                <p>Esmalte Rosa Impala</p>
+                <p>R$ 5,50</p>
+            </div>
+            <div class="product-card">
+                <img src="PW/esmalte vinho.webp">
+                <p>Esmalte Vinho Impala</p>
+                <p>R$ 5,50</p>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </div>
+    </section>
+    <section class="services-section">
+        <h2>Principais Serviços💖</h2>
+        <div class="services-cards">
+            <div class="service-card">
+                <h3>Manicure</h3>
+                <img src="PW/Blush-Nails.jpg">
+                <p>Cuide das suas unhas com o melhor acabamento e qualidade.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pedicure</h3>
+                <img src="PW/pedicure.jpg" >
+                <p>Deixe seus pés impecáveis com nossos serviços de pedicure.</p>
+            </div>
+            <div class="service-card">
+                <h3>Unhas de Gel</h3>
+                <img src="PW/unhs de gel.jpg">
+                <p>Unhas duradouras e sofisticadas com aplicação de gel.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-contact">☎ (11) 95910-3096</p>
+            <div class="footer-social-links">
+                <a href="#"><img src="insta.png" width="30px"></a>
+                <a href="#"><img src="tiktok-logo.png" width="30px"></a>
+            </div>
+            <p class="footer-slogan">Deixe suas unhas brilharem conosco!</p>
+        </div>
+    </footer>
+</body>
+</html>

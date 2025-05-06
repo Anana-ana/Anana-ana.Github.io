@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojas - KBeauty Nails</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F8F8F8;
+      margin: 0;
+      padding: 0;
+      color: #333333;
+    }
+    .top-bar {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-bar .contact-info {
+    padding-left: 20px;
+}
+
+.top-bar .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(233, 30, 99);
+    font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(233, 30, 99);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.navbar .logo {
+    width: 150px;
+    padding: 5px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--cor-texto);
+}
+
+    h1 {
+      margin: 0;
+    }
+
+    .lojas-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+
+    .card-loja {
+      background-color: #FFF4F4;
+      border: 1px solid #E91E63;
+      border-radius: 12px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    .card-loja img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card-loja h2 {
+      color: #E91E63;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card-loja p {
+      font-size: 14px;
+      color: #333333;
+    }
+
+    footer {
+      background-color: rgb(233, 30, 99);
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="top-bar">
+        <span class="contact-info" style="color: #333333; padding-bottom: 5px;"> ☎ (11) 95910-3096</span>
+        <b style="color: #333333;">KBeauty Nails</b>
+        <div class="social-links">
+            <a href="#" class="social-icon"><img src="insta.png" width="30px"></a>
+            <a href="#" class="social-icon"><img src="tiktok-logo.png" width="30px"></a>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo"> <img src="ChatGPT Image 27 de abr. de 2025, 10_02_07.png" width="100px"></div>
+        <ul class="nav-links">
+            <li><a href="file:///E:/index.html">Home</a></li>
+            <li><a href="file:///E:/sobre.html">Sobre</a></li>
+            <li><a href="#">Lojas</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Carrinho</a></li>
+        </ul>
+    </nav>
+
+  <main>
+    <div class="lojas-container">
+
+      <div class="card-loja">
+        <img src="loja 1.png" alt="Foto da Loja 1">
+        <h2>KBeauty Nails - Unidade Centro</h2>
+        <p>Rua das Flores, 123 - Centro, São Paulo - SP</p>
+      </div>
+
+      <div class="card-loja">
+        <img src="loja 2.png" alt="Foto da Loja 2">
+        <h2>KBeauty Nails - Unidade Jardim</h2>
+        <p>Avenida Primavera, 456 - Jardim das Rosas, São Paulo - SP</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p class="footer-contact">☎ (11) 95910-3096</p>
+        <div class="footer-social-links">
+            <a href="#"><img src="insta.png" width="30px"></a>
+            <a href="#"><img src="tiktok-logo.png" width="30px"></a>
+        </div>
+        <p class="footer-slogan">Deixe suas unhas brilharem conosco!</p>
+    </div>
+  </footer>
+
+</body>
+</html>
